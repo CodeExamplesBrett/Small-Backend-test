@@ -28,6 +28,7 @@ let users = [];
                 document.getElementById("names").innerHTML += `<span class="userName">${user} 
                     <button onclick="deleteUser(${i})" >del</button>  
                     <button onclick="editUser(${i})" >Edit</button>
+                    <button onclick="updateUserManual(${i})" >Edit Manual</button>
                     
                      </span>`;
             }
@@ -65,12 +66,12 @@ let users = [];
             useNew = users
             console.log('new', useNew)
             setArray("users", useNew);
-            //displayEnties(); 
+            displayEnties(); 
 
         }
 
         
-        function updateUser(i) {
+        function updateUserManual(i) {
             users[i] = edit.value
             setArray("users", users);
             displayEnties(); 
