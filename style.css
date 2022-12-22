@@ -1,0 +1,18 @@
+#names{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.dnone{
+    display: none;
+}
+
+.inputBox{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 20%;
+    left: 50%;
+    background-color: beige;
+}
